@@ -1,0 +1,11 @@
+.active-link {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.active-link mat-icon {
+  color: orange;
+}
+
+.active-link span {
+  color: orange;
+}

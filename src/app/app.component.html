@@ -1,0 +1,22 @@
+<mat-toolbar>
+  <span>My Application</span>
+</mat-toolbar>
+<mat-drawer-container class="h-screen">
+  <mat-drawer mode="side" opened>
+    <mat-list class="bg-green-200">
+      <mat-list-item routerLink="/home" routerLinkActive="active-link">
+        <mat-icon matListItemIcon class="mr-3">home</mat-icon>
+        <span matListItemTitle>Home</span>
+      </mat-list-item>
+      <mat-list-item routerLink="/estoque" routerLinkActive="active-link">
+        <mat-icon matListItemIcon>menu</mat-icon>
+        <span matListItemTitle>Estoque</span>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="p-2.5">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
